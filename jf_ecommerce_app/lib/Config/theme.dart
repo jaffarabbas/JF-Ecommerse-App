@@ -35,19 +35,26 @@ TextTheme textTheme() {
     button: TextStyle(
       color: kPrimaryLightColor,
     ),
+
+
+
     headline1: headingStyle,
+    
+    
     headline2: TextStyle(
       color: kHeading,
       fontFamily: "Times New Roman",
       fontSize: headingfontSize,
       height: 1,
     ),
+    
     headline3: TextStyle(
       color: khighLightColor,
       fontFamily: "Times New Roman",
       fontSize: headingfontSize - 4,
       height: 1,
     ),
+    
     headline4: TextStyle(
       color: kHeading,
       fontFamily: "Times New Roman",
@@ -55,11 +62,13 @@ TextTheme textTheme() {
       height: 1,
       decoration: TextDecoration.lineThrough,
     ),
+    
     bodyText1: TextStyle(
       fontFamily: "Times New Roman",
       color: kTextColor,
       fontSize: fontSize - 2,
     ),
+    
     bodyText2: TextStyle(
         fontFamily: "Times New Roman", color: kHeading, fontSize: fontSize),
   );
