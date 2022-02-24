@@ -1,4 +1,5 @@
-import 'package:jf_ecommerce_app/Config/size_config.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:jz_ecommerce_app/Config/size_config.dart';
 import 'package:flutter/material.dart';
 
 import 'constants.dart';
@@ -7,12 +8,13 @@ ThemeData theme() {
   return ThemeData(
       scaffoldBackgroundColor: kPrimaryLightColor,
       primaryColor: kPrimaryColor,
-      fontFamily: "Overlook",
+      fontFamily: GoogleFonts.nunitoSans().fontFamily,
       appBarTheme: appBarTheme(),
       textTheme: textTheme(),
       inputDecorationTheme: inputDecorationTheme(),
       visualDensity: VisualDensity.adaptivePlatformDensity,
-      floatingActionButtonTheme: getFloatingButton());
+      floatingActionButtonTheme: getFloatingButton()
+  );
 }
 
 InputDecorationTheme inputDecorationTheme() {
