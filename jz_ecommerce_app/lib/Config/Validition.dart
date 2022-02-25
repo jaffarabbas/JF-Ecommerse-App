@@ -1,4 +1,6 @@
-import 'package:jf_ecommerce_app/Config/constants.dart';
+import 'package:jz_ecommerce_app/Config/constants.dart';
+
+import 'constants.dart';
 
 validtionConstantName(String name) {
   List<dynamic> toReturn = [true, ""];
