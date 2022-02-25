@@ -6,29 +6,31 @@ import 'constants.dart';
 
 ThemeData theme() {
   return ThemeData(
-      scaffoldBackgroundColor: kPrimaryLightColor,
-      primaryColor: kPrimaryColor,
-      fontFamily: GoogleFonts.nunitoSans().fontFamily,
-      // appBarTheme: appBarTheme(),
-      // textTheme: textTheme(),
-      inputDecorationTheme: inputDecorationTheme(),
-      visualDensity: VisualDensity.adaptivePlatformDensity,
-      // floatingActionButtonTheme: getFloatingButton()
+    scaffoldBackgroundColor: kPrimaryLightColor,
+    primaryColor: kPrimaryColor,
+    fontFamily: GoogleFonts.nunitoSans().fontFamily,
+    // appBarTheme: appBarTheme(),
+    inputDecorationTheme: inputDecorationTheme(),
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+    // floatingActionButtonTheme: getFloatingButton()
   );
 }
 
 InputDecorationTheme inputDecorationTheme() {
   UnderlineInputBorder underlineInputBorder = const UnderlineInputBorder(
-    borderSide: BorderSide(color: kPrimaryColor,width: 2,),
+    borderSide: BorderSide(
+      color: kPrimaryColor,
+      width: 2,
+    ),
   );
   TextStyle HintStyle = TextStyle(
-            color: kSecondaryFontColor,
-            fontSize: inputHintFontsize,
-            fontWeight: FontWeight.w900,
-          );
+    color: kSecondaryFontColor,
+    fontSize: inputHintFontsize,
+    fontWeight: FontWeight.w900,
+  );
   return InputDecorationTheme(
     floatingLabelBehavior: FloatingLabelBehavior.always,
-    contentPadding: const EdgeInsets.symmetric(horizontal: 50,vertical: 20),
+    contentPadding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
     focusColor: kSecondaryFontColor,
     enabledBorder: underlineInputBorder,
     focusedBorder: underlineInputBorder,
@@ -36,6 +38,28 @@ InputDecorationTheme inputDecorationTheme() {
     hintStyle: HintStyle,
   );
 }
+
+//button stylings
+
+BoxDecoration BigButtonStyle = const BoxDecoration(
+    color: kPrimaryColor, borderRadius: BorderRadius.all(Radius.circular(10)));
+
+TextStyle buttonTextStyle = TextStyle(
+    color: kPrimaryLightColor,
+    fontSize: buttonFontsize1,
+    fontWeight: FontWeight.w900);
+
+//login text style
+
+TextStyle dynamicTextStyle = const TextStyle(
+  fontWeight: FontWeight.bold,
+  color: kTextColor
+);
+
+TextStyle secondaryTextStyle = const TextStyle(
+  fontWeight: FontWeight.bold,
+  color: kSecondaryFontColor,
+);
 
 // TextTheme textTheme() {
 //   return const TextTheme(
@@ -45,30 +69,30 @@ InputDecorationTheme inputDecorationTheme() {
 
 
 
-//     headline1: headingStyle,
+//     // headline1: headingStyle,
     
     
-//     headline2: TextStyle(
-//       color: kHeading,
-//       fontFamily: "Times New Roman",
-//       fontSize: headingfontSize,
-//       height: 1,
-//     ),
+//     // headline2: TextStyle(
+//     //   color: kHeading,
+//     //   fontFamily: "Times New Roman",
+//     //   fontSize: headingfontSize,
+//     //   height: 1,
+//     // ),
     
-//     headline3: TextStyle(
-//       color: khighLightColor,
-//       fontFamily: "Times New Roman",
-//       fontSize: headingfontSize - 4,
-//       height: 1,
-//     ),
+//     // headline3: TextStyle(
+//     //   color: khighLightColor,
+//     //   fontFamily: "Times New Roman",
+//     //   fontSize: headingfontSize - 4,
+//     //   height: 1,
+//     // ),
     
-//     headline4: TextStyle(
-//       color: kHeading,
-//       fontFamily: "Times New Roman",
-//       fontSize: headingfontSize - 8,
-//       height: 1,
-//       decoration: TextDecoration.lineThrough,
-//     ),
+//     // headline4: TextStyle(
+//     //   color: kHeading,
+//     //   fontFamily: "Times New Roman",
+//     //   fontSize: headingfontSize - 8,
+//     //   height: 1,
+//     //   decoration: TextDecoration.lineThrough,
+//     // ),
     
 //     bodyText1: TextStyle(
 //       fontFamily: "Times New Roman",
@@ -76,8 +100,8 @@ InputDecorationTheme inputDecorationTheme() {
 //       fontSize: fontSize - 2,
 //     ),
     
-//     bodyText2: TextStyle(
-//         fontFamily: "Times New Roman", color: kHeading, fontSize: fontSize),
+//     // bodyText2: TextStyle(
+//     //     fontFamily: "Times New Roman", color: kHeading, fontSize: fontSize),
 //   );
 // }
 
