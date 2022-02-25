@@ -1,37 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:jz_ecommerce_app/Config/size_config.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-const kPrimaryColor = Color(0xFFFF8800);
-const kPrimaryColor2 = Color(0xFFFFBB33);
+
+//size configuration
+const double width = 360;
+const double height = 640;
+
+
+const kPrimaryColor = Color(0xFF111015);
+const kSecondaryColor = Color(0xFFF1F5F8);
 const kPrimaryLightColor = Color(0xFFFFFFFF);
 
-const kSecondaryColor2 = Color(0XFFF3F3F3);
-const kSecondaryColor = Color(0XFF707070);
-const kTextColor = Color(0xFF757575);
-const kHeading = Colors.black;
-const khighLightColor = Colors.red;
-
-const kPrimaryGradientColor = LinearGradient(
-  begin: Alignment.center,
-  end: Alignment.center,
-  colors: [Color(0xFFFFBB33), Color(0xFFFFBB53)],
-);
+const kSecondaryFontColor = Color(0xFF626365);
+const kTextColor = Color(0xFF111015);
 
 const kAnimationDuration = Duration(milliseconds: 200);
 const defaultDuration = Duration(milliseconds: 250);
 
 const double fontSize = 16;
+double inputHintFontsize = 12.sp;
 const double headingfontSize = 23;
 const double iconSize = 12;
 const double kiconSize = 24;
 
 const double discount = 4.5;
 
-const TextStyle headingStyle = TextStyle(
-  fontSize: 18,
-  fontWeight: FontWeight.bold,
-  color: kTextColor,
-);
+const String logo_medium = 'assets/logo/logo_med.png';
 
 // Form Error
 final RegExp emailValidatorRegExp =
