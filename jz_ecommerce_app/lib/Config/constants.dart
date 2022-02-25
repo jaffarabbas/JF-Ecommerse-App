@@ -18,8 +18,9 @@ const kTextColor = Color(0xFF111015);
 const kAnimationDuration = Duration(milliseconds: 200);
 const defaultDuration = Duration(milliseconds: 250);
 
-const double fontSize = 16;
 double inputHintFontsize = 12.sp;
+double buttonFontsize1 = 12.sp;
+const double fontSize = 16;
 const double headingfontSize = 23;
 const double iconSize = 12;
 const double kiconSize = 24;
