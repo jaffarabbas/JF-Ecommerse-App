@@ -27,7 +27,12 @@ const double kiconSize = 24;
 
 const double discount = 4.5;
 
-const String logo_medium = 'assets/logo/logo_med.png';
+const String logo_small = 'assets/logo/logo_small.svg';
+const String logo_medium = 'assets/logo/logo_medium.svg';
+const String logo_large = 'assets/logo/logo_large.svg';
+const String home_logo = 'assets/logo/logo_home.svg';
+
+const String main_background = 'assets/backgrounds/main_background.svg';
 
 // Form Error
 final RegExp emailValidatorRegExp =
