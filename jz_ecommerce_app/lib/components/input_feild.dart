@@ -21,15 +21,15 @@ class _InputFeildState extends State<InputFeild> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 20),
-      padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 10.h),
+      margin: EdgeInsets.only(top: 5.h),
+      padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 7.h),
       child: TextField(
         controller: widget.controller,
         obscureText: widget.isPassword ? true : false,
         decoration: InputDecoration(
           prefixIcon: Icon(
             widget.prefixIcon,
-            size: 30,
+            size: 30.sp,
             color: kSecondaryFontColor,
           ),
           prefixIconColor: kSecondaryFontColor,
