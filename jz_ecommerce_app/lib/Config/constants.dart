@@ -20,6 +20,7 @@ const defaultDuration = Duration(milliseconds: 250);
 
 double inputHintFontsize = 12.sp;
 double buttonFontsize1 = 12.sp;
+double productCardTitile = 15.sp;
 const double fontSize = 16;
 const double headingfontSize = 23;
 const double iconSize = 12;
@@ -33,6 +34,22 @@ const String logo_large = 'assets/logo/logo_large.svg';
 const String home_logo = 'assets/logo/logo_home.svg';
 
 const String main_background = 'assets/backgrounds/main_background.svg';
+
+//product images 
+const String p1 = "assets/images/p1.png";
+const String p2 = "assets/images/p2.png";
+const String p3 = "assets/images/p3.png";
+const String p4 = "assets/images/p4.png";
+
+const String s1 = "assets/images/s1.png";
+const String s2 = "assets/images/s2.png";
+const String s3 = "assets/images/s3.png";
+const String s4 = "assets/images/s4.png";
+
+const String t1 = "assets/images/t1.png";
+const String t2 = "assets/images/t2.png";
+const String t3 = "assets/images/t3.png";
+const String t4 = "assets/images/t4.png";
 
 // Form Error
 final RegExp emailValidatorRegExp =
