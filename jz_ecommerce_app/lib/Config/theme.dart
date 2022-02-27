@@ -1,3 +1,4 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jz_ecommerce_app/Config/size_config.dart';
 import 'package:flutter/material.dart';
@@ -51,16 +52,29 @@ TextStyle buttonTextStyle = TextStyle(
 
 //login text style
 
-TextStyle dynamicTextStyle = const TextStyle(
-  fontWeight: FontWeight.bold,
-  color: kTextColor
-);
+TextStyle dynamicTextStyle =
+    const TextStyle(fontWeight: FontWeight.bold, color: kTextColor);
 
 TextStyle secondaryTextStyle = const TextStyle(
   fontWeight: FontWeight.bold,
   color: kSecondaryFontColor,
 );
 
+TextStyle productCardTextStyle = const TextStyle(
+    fontWeight: FontWeight.bold, fontSize: 19, color: kTextColor);
+
+BoxShadow productCardShadow = const BoxShadow(
+  color: kSecondaryFontColor,
+  offset: Offset(0.0, 0.0), //(x,y)
+  blurRadius: 4.0,
+  spreadRadius: 2.0,
+);
+
+BoxDecoration productCardDecoration = BoxDecoration(
+  color: kPrimaryLightColor,
+  borderRadius: BorderRadius.circular(20),
+  boxShadow: [productCardShadow],
+);
 // TextTheme textTheme() {
 //   return const TextTheme(
 //     button: TextStyle(
