@@ -49,7 +49,10 @@ const String s4 = "assets/images/s4.png";
 const String t1 = "assets/images/t1.png";
 const String t2 = "assets/images/t2.png";
 const String t3 = "assets/images/t3.png";
-const String t4 = "assets/images/t4.png";
+const String t4 = "assets/images/tt2.png";
+
+const String j1 = "assets/images/j1.png";
+const String j2 = "assets/images/j2.png";
 
 // Form Error
 final RegExp emailValidatorRegExp =
