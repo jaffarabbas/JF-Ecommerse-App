@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                     SvgPicture.asset(home_logo, semanticsLabel: 'Signup Logo'),
               ),
             ),
-            // ProductGrid(),
+            ProductGrid(),
           ],
         ),
       ),
