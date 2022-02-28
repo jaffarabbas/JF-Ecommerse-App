@@ -66,7 +66,7 @@ TextStyle productCardTextStyle = const TextStyle(
 BoxShadow productCardShadow = const BoxShadow(
   color: kSecondaryFontColor,
   offset: Offset(0.0, 0.0), //(x,y)
-  blurRadius: 4.0,
+  blurRadius: 3.0,
   spreadRadius: 2.0,
 );
 
