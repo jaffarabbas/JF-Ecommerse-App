@@ -4,30 +4,34 @@ import 'package:jz_ecommerce_app/Config/theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ProductCard extends StatelessWidget {
-  const ProductCard({Key? key}) : super(key: key);
+  String image;
+  String name;
+  ProductCard({Key? key,required this.image,required this.name}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 161.h,
+      height: 270.h,
       width: 131.w,
       decoration: productCardDecoration,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
-            p2,
-            fit: BoxFit.cover,
-            height: 40.h,
-            width: 100.w,
-          ),
-          SizedBox(
-            height: 30.h,
+          Container(
+            height: 80.h,
+            width: 90.w,
+            child: Image.asset(
+              image,
+              fit: BoxFit.scaleDown,
+            ),
           ),
           Text(
-            'Shoes',
+            name,
             style: productCardTextStyle,
+          ),
+          SizedBox(
+            height: 10.h,
           ),
         ],
       ),
