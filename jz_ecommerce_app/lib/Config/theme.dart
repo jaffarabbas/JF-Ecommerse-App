@@ -75,6 +75,18 @@ BoxDecoration productCardDecoration = BoxDecoration(
   borderRadius: BorderRadius.circular(20),
   boxShadow: [productCardShadow],
 );
+
+BoxDecoration CartCardDecoration = BoxDecoration(
+  color: kPrimaryLightColor,
+  borderRadius: BorderRadius.circular(20),
+  boxShadow: [productCardShadow],
+);
+
+BoxDecoration CartButtonDecoration = BoxDecoration(
+  color: kSecondaryColor,
+  borderRadius: BorderRadius.circular(6.sp),
+);
+
 // TextTheme textTheme() {
 //   return const TextTheme(
 //     button: TextStyle(
