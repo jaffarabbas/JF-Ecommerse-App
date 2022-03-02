@@ -32,6 +32,8 @@ const String logo_small = 'assets/logo/logo_small.svg';
 const String logo_medium = 'assets/logo/logo_medium.svg';
 const String logo_large = 'assets/logo/logo_large.svg';
 const String home_logo = 'assets/logo/logo_home.svg';
+const String primary_drawer_logo = 'assets/logo/primaryDrawerLogo.svg';
+const String secondary_drawer_logo = 'assets/logo/secondaryDrawerLogo.svg';
 
 const String main_background = 'assets/backgrounds/main_background.svg';
 
