@@ -1,11 +1,18 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:jz_ecommerce_app/Config/constants.dart';
 import 'package:jz_ecommerce_app/Config/theme.dart';
 import 'package:jz_ecommerce_app/components/appbar.dart';
+import 'package:jz_ecommerce_app/components/mainBackground.dart';
+import 'package:jz_ecommerce_app/components/button.dart';
 import 'package:jz_ecommerce_app/components/drawer.dart';
-import 'package:jz_ecommerce_app/pages/cart_screen/widget/cart_product_card.dart';
+import 'package:jz_ecommerce_app/pages/cart_screen/widgets/bottom_price_card.dart';
+import 'package:jz_ecommerce_app/pages/cart_screen/widgets/cart_page_header.dart';
+import 'package:jz_ecommerce_app/pages/cart_screen/widgets/cart_product_card.dart';
+import 'package:jz_ecommerce_app/pages/cart_screen/widgets/cart_product_card_list.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({Key? key}) : super(key: key);
@@ -27,59 +34,18 @@ class _CartScreenState extends State<CartScreen> {
           fit: StackFit.expand,
           // alignment: Alignment.center,
           children: [
-            Positioned(
+            const Positioned(
               top: 0,
-              child: Container(
-                child: SvgPicture.asset(main_background,
-                    semanticsLabel: 'Splash Logo', fit: BoxFit.fitHeight),
-              ),
+              child: MainBackground(),
             ),
             Positioned(
               top: 80.h,
-              child: Container(
-                width: 350.w,
-                padding: EdgeInsets.symmetric(horizontal: 17.w),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      'CART',
-                      style: TextStyle(
-                        color: kPrimaryLightColor,
-                        fontSize: 26.sp,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 15.4.sp,
-                      ),
-                    ),
-                    Text(
-                      'Total 5 items',
-                      style: TextStyle(
-                        color: kPrimaryLightColor,
-                        fontSize: 9.sp,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 4.sp,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              child: const CartHeader(),
             ),
-            SingleChildScrollView(
-              child: Container(
-                margin: EdgeInsets.only(top: 10.h),
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20.w),
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
-                    itemCount: 30,
-                    itemBuilder: (context, index) {
-                      return CartProductCard();
-                    },
-                  ),
-                ),
-              ),
+            const ProductList(),
+            const Positioned(
+              bottom: 0,
+              child: BottomPriceCard(),
             ),
           ],
         ),
