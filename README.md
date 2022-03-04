@@ -1,3 +1,3 @@
 # JF Ecommerse App
-Ecommerse app
+Ecommerse app using flutter
  
