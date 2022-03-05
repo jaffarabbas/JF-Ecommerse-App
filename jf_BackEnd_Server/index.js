@@ -13,7 +13,9 @@ const cors = require("cors");
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect(
+    "mongodb+srv://kolachiAdmin:kolachiAdmin@kolachi.dqfyh.mongodb.net/JF_Ecommerce?retryWrites=true&w=majority"
+  )
   .then(() => console.log("DB Connection Successfull!"))
   .catch((err) => {
     console.log(err);
