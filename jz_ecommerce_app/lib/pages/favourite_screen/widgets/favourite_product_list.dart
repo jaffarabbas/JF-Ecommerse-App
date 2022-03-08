@@ -19,10 +19,10 @@ class _FavouriteProductListState extends State<FavouriteProductList> {
           padding: EdgeInsets.symmetric(horizontal: 20.w),
           child: ListView.builder(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: 30,
             itemBuilder: (context, index) {
-              return FavouriteProductCard();
+              return const FavouriteProductCard();
             },
           ),
         ),
