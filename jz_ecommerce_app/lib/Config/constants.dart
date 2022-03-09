@@ -28,6 +28,10 @@ const double kiconSize = 24;
 
 const double discount = 4.5;
 
+List product = ["Men Shoes", "Women Shoes", "Kids Shoes"];
+
+int isActive = 0;
+
 const String logo_small = 'assets/logo/logo_small.svg';
 const String logo_medium = 'assets/logo/logo_medium.svg';
 const String logo_large = 'assets/logo/logo_large.svg';
