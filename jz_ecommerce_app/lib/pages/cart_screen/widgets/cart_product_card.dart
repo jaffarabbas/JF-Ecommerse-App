@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:jz_ecommerce_app/Config/constants.dart';
 import 'package:jz_ecommerce_app/Config/theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:jz_ecommerce_app/pages/cart_screen/widget/cart_buttons.dart';
-import 'package:jz_ecommerce_app/pages/cart_screen/widget/cart_product_info.dart';
+import 'package:jz_ecommerce_app/pages/cart_screen/widgets/cart_buttons.dart';
+import 'package:jz_ecommerce_app/pages/cart_screen/widgets/cart_product_info.dart';
 
 class CartProductCard extends StatefulWidget {
   const CartProductCard({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class _CartProductCardState extends State<CartProductCard> {
   Widget build(BuildContext context) {
     return Container(
       decoration: CartCardDecoration,
-      margin: EdgeInsets.all(20),
+      margin: EdgeInsets.symmetric(horizontal:20.w,vertical:16.h),
       height: 90.0.h,
       width: 280.0.w,
       child: Row(

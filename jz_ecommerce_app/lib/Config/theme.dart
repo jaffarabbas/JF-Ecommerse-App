@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jz_ecommerce_app/Config/size_config.dart';
@@ -63,6 +65,104 @@ TextStyle secondaryTextStyle = const TextStyle(
 TextStyle productCardTextStyle = const TextStyle(
     fontWeight: FontWeight.bold, fontSize: 19, color: kTextColor);
 
+TextStyle HeaderMainHeadingTextStyle = const TextStyle(
+  color: kPrimaryLightColor,
+  fontSize: 19,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 8.4,
+);
+
+TextStyle HeaderPrimaryHeadingTextStyle = const TextStyle(
+  color: kPrimaryLightColor,
+  fontSize: 9,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 4,
+);
+
+TextStyle HeaderSecondaryHeadingTextStyle = const TextStyle(
+  color: kPrimaryLightColor,
+  fontSize: 30,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 8.4,
+);
+
+TextStyle HeaderScrollHeadingTextStyle = const TextStyle(
+  color: kPrimaryLightColor,
+  fontSize: 16,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 6.4,
+);
+
+TextStyle HeaderScrollActiveHeadingTextStyle = const TextStyle(
+  color: kSecondaryFontColor,
+  fontSize: 16,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 6.4,
+);
+
+TextStyle ProductCardInfoTextStyle = const TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.bold,
+);
+
+TextStyle BottomCardMainHeadingStyle = const TextStyle(
+  color: kPrimaryColor,
+  fontSize: 18,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 10.4,
+);
+
+TextStyle BottomCardPrimaryHeadingStyle = const TextStyle(
+  color: kPrimaryColor,
+  fontSize: 13,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 10.4,
+);
+
+
+TextStyle ProductMainCardMainHeadingStyle = const TextStyle(
+  color: kPrimaryColor,
+  fontSize: 23,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 10.4,
+);
+
+
+TextStyle ProductMainCardSubHeadingStyle = const TextStyle(
+  color: kSecondaryFontColor,
+  fontSize: 15,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 10.4,
+);
+
+TextStyle ProductMainCardPriceHeadingStyle = const TextStyle(
+  color: kPrimaryColor,
+  fontSize: 15,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 10.4,
+);
+
+TextStyle ProductMainCardTypeHeadingStyle = const TextStyle(
+  color: kPrimaryColor,
+  fontSize: 12,
+  fontWeight: FontWeight.bold,
+);
+
+TextStyle ProductMainCardBottomCardMainHeadingStyle = const TextStyle(
+  color: kPrimaryColor,
+  fontSize: 15,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 4.4,
+);
+
+TextStyle ProductMainCardBottomCardPrimaryHeadingStyle = const TextStyle(
+  color: kPrimaryColor,
+  fontSize: 13,
+  fontWeight: FontWeight.bold,
+  letterSpacing: 7.4,
+);
+
+
 BoxShadow productCardShadow = const BoxShadow(
   color: kSecondaryFontColor,
   offset: Offset(0.0, 0.0), //(x,y)
@@ -85,6 +185,13 @@ BoxDecoration CartCardDecoration = BoxDecoration(
 BoxDecoration CartButtonDecoration = BoxDecoration(
   color: kSecondaryColor,
   borderRadius: BorderRadius.circular(6.sp),
+);
+
+
+BoxDecoration ProductMainCardDecoration = BoxDecoration(
+  color: kSecondaryColor,
+  borderRadius: BorderRadius.circular(20),
+  boxShadow: [productCardShadow],
 );
 
 // TextTheme textTheme() {
