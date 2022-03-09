@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jz_ecommerce_app/Config/constants.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:jz_ecommerce_app/Config/theme.dart';
 
 class CartHeader extends StatefulWidget {
   const CartHeader({Key? key}) : super(key: key);
@@ -21,21 +22,11 @@ class _CartHeaderState extends State<CartHeader> {
         children: [
           Text(
             'CART',
-            style: TextStyle(
-              color: kPrimaryLightColor,
-              fontSize: 26.sp,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 15.4.sp,
-            ),
+            style: HeaderMainHeadingTextStyle
           ),
           Text(
             'Total 5 items',
-            style: TextStyle(
-              color: kPrimaryLightColor,
-              fontSize: 9.sp,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 4.sp,
-            ),
+            style: HeaderPrimaryHeadingTextStyle
           ),
         ],
       ),
