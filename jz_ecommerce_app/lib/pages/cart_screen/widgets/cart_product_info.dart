@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jz_ecommerce_app/Config/theme.dart';
 import 'package:jz_ecommerce_app/pages/cart_screen/widgets/cart_buttons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,10 +21,7 @@ class _CartProdctInfoState extends State<CartProdctInfo> {
         children: [
           Text(
             'Jordens',
-            style: TextStyle(
-              fontSize: 15.sp,
-              fontWeight: FontWeight.bold,
-            ),
+            style: ProductCardInfoTextStyle
           ),
           Container(
             width: 90.w,
@@ -33,10 +31,7 @@ class _CartProdctInfoState extends State<CartProdctInfo> {
                 CartButton(icon: Icons.add),
                 Text(
                   '5',
-                  style: TextStyle(
-                    fontSize: 15.sp,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: ProductCardInfoTextStyle
                 ),
                 CartButton(icon: Icons.horizontal_rule_rounded),
               ],
