@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jz_ecommerce_app/Config/theme.dart';
 import 'package:jz_ecommerce_app/components/button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,17 +21,11 @@ class FavouriteProdctInfoState extends State<FavouriteProdctInfo> {
         children: [
           Text(
             'Jordens',
-            style: TextStyle(
-              fontSize: 15.sp,
-              fontWeight: FontWeight.bold,
-            ),
+            style: ProductCardInfoTextStyle
           ),
           Text(
             '300\$',
-            style: TextStyle(
-              fontSize: 15.sp,
-              fontWeight: FontWeight.bold,
-            ),
+            style: ProductCardInfoTextStyle
           ),
           NavigationButton(
             navigate: () {},
