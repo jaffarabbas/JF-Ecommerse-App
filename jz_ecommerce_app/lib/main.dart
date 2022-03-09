@@ -6,6 +6,7 @@ import 'package:jz_ecommerce_app/pages/cart_screen/cart_screen.dart';
 import 'package:jz_ecommerce_app/pages/favourite_screen/favourite_screen.dart';
 import 'package:jz_ecommerce_app/pages/home_screen/home_screen.dart';
 import 'package:jz_ecommerce_app/pages/login_screen/login_screen.dart';
+import 'package:jz_ecommerce_app/pages/product_main_page/product_main_page.dart';
 import 'package:jz_ecommerce_app/pages/signup_screen/signup_screen.dart';
 import 'package:jz_ecommerce_app/pages/splash_screen/splash_screen.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       builder: () => MaterialApp(
         theme: theme(),
-        home: FavouriteScreen(),
+        home: ProductMainPage(),
         debugShowCheckedModeBanner: false,
       ),
       designSize: const Size(width,height),
