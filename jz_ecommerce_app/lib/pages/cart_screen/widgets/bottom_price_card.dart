@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jz_ecommerce_app/Config/constants.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:jz_ecommerce_app/Config/theme.dart';
 import 'package:jz_ecommerce_app/components/button.dart';
 
 class BottomPriceCard extends StatefulWidget {
@@ -25,21 +26,11 @@ class _BottomPriceCardState extends State<BottomPriceCard> {
             children: [
               Text(
                 'TOTAL',
-                style: TextStyle(
-                  color: kPrimaryColor,
-                  fontSize: 18.sp,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 10.4.sp,
-                ),
+                style: BottomCardMainHeadingStyle
               ),
               Text(
                 '300\$',
-                style: TextStyle(
-                  color: kPrimaryColor,
-                  fontSize: 13.sp,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 10.4.sp,
-                ),
+                style: BottomCardPrimaryHeadingStyle
               ),
             ],
           ),
