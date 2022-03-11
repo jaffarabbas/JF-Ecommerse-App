@@ -9,6 +9,7 @@ const userRoute = require("./api_routes/UserInfo");
 const authRoute = require("./api_routes/auth");
 const productRoute = require("./api_routes/product");
 const cartRoute = require("./api_routes/cart");
+const favoriteRoute = require("./api_routes/favorite");
 
 
 const app = express();
@@ -27,6 +28,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
+app.use("/api/favorite", favoriteRoute);
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("Backend server is running!");
