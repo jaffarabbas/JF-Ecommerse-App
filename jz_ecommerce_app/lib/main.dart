@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       builder: () => MaterialApp(
         theme: theme(),
-        home: ProductMainPage(),
+        home: HomeScreen(),
         debugShowCheckedModeBanner: false,
       ),
       designSize: const Size(width,height),
