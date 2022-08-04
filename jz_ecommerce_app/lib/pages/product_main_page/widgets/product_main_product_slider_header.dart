@@ -17,7 +17,7 @@ class _MainSliderHeaderState extends State<MainSliderHeader> {
         IconButton(
           onPressed: () {},
           icon: const Icon(
-            Icons.shopping_cart_rounded,
+            Icons.shopping_cart,
             color: kPrimaryColor,
             size: 30,
           ),
