@@ -26,7 +26,7 @@ class _ProductMainSliderState extends State<ProductMainSlider> {
         return Container(
           padding: const EdgeInsets.all(10),
           margin: EdgeInsets.only(left: 25.h, top: 10, bottom: 10),
-          height: 295,
+          height: 200.h,
           width: 258.w,
           decoration: ProductMainCardDecoration,
           child: const ProductSliderContent(),
