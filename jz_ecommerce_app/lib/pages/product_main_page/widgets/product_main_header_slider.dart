@@ -22,7 +22,7 @@ class _ProductMainHeaderSliderState extends State<ProductMainHeaderSlider> {
 
     return Container(
       height: 50.h,
-      width: 300.w,
+      width: 320.w,
       margin: EdgeInsets.only(top: 10.h),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
