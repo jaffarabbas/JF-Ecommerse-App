@@ -45,11 +45,11 @@ class _ProductMainPageState extends State<ProductMainPage> {
             Positioned(
               top: 160.h,
               height: 300.h,
-              width: 410,
+              width: 410.w,
               child: ProductMainSlider(),
             ),
             Positioned(
-              bottom: 60.h,
+              bottom: 30.h,
               width: 410,
               child: ProductMainLatestProduct()
             ),
