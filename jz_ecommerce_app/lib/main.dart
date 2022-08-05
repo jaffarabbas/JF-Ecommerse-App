@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:jz_ecommerce_app/Config/constants.dart';
 import 'package:jz_ecommerce_app/Config/theme.dart';
+import 'package:jz_ecommerce_app/Services/populateJson.dart';
 import 'package:jz_ecommerce_app/pages/cart_screen/cart_screen.dart';
 import 'package:jz_ecommerce_app/pages/favourite_screen/favourite_screen.dart';
 import 'package:jz_ecommerce_app/pages/home_screen/home_screen.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       builder: () => MaterialApp(
         theme: theme(),
-        home: ProductMainPage(),
+        home: ProductMainPage(products: PopulateJson.PopulateJsonData()),
         debugShowCheckedModeBanner: false,
       ),
       designSize: const Size(width,height),
