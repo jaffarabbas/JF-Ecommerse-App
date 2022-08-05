@@ -17,7 +17,11 @@ class PrimaryImage extends StatelessWidget {
     return Container(
       height: height,
       width: width,
-      child: Image.asset(
+      // child: Image.asset(
+      //   image,
+      //   fit: BoxFit.scaleDown,
+      // ),
+      child: Image.network(
         image,
         fit: BoxFit.scaleDown,
       ),
