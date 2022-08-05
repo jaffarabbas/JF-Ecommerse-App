@@ -11,9 +11,11 @@ import 'package:jz_ecommerce_app/components/primaryImage.dart';
 import 'package:jz_ecommerce_app/pages/product_main_page/widgets/product_,main_latest_product.dart';
 import 'package:jz_ecommerce_app/pages/product_main_page/widgets/product_main_header.dart';
 import 'package:jz_ecommerce_app/pages/product_main_page/widgets/product_main_product_slider.dart';
+import '../../Model/testModel.dart';
 
 class ProductMainPage extends StatefulWidget {
-  ProductMainPage({Key? key}) : super(key: key);
+  Future<List<Product>> products;
+  ProductMainPage({Key? key,required this.products}) : super(key: key);
 
   @override
   State<ProductMainPage> createState() => _ProductMainPageState();
@@ -46,7 +48,7 @@ class _ProductMainPageState extends State<ProductMainPage> {
               top: 160.h,
               height: 300.h,
               width: 410.w,
-              child: ProductMainSlider(),
+              child: ProductMainSlider(products: widget.products),
             ),
             Positioned(
               bottom: 30.h,
