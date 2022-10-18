@@ -3,6 +3,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:jz_ecommerce_app/Config/constants.dart';
 import 'package:jz_ecommerce_app/pages/home_screen/widgets/product_card.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:jz_ecommerce_app/pages/product_main_page/product_main_page.dart';
 
 class ProductGrid extends StatefulWidget {
   const ProductGrid({Key? key}) : super(key: key);
@@ -42,7 +43,7 @@ class _ProductGridState extends State<ProductGrid> {
     return Flexible(
       child: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.only(top:100.h),
+          margin: EdgeInsets.only(top: 100.h),
           child: Padding(
             padding: const EdgeInsets.all(40.0),
             child: StaggeredGrid.count(
@@ -53,42 +54,70 @@ class _ProductGridState extends State<ProductGrid> {
                 StaggeredGridTile.count(
                   crossAxisCellCount: 2,
                   mainAxisCellCount: indexIncreatement(),
-                  child: ProductCard(image: p2,name: 'Shoes',),
+                  child: InkWell(
+                      onTap: () {
+                        ProductMainPage();
+                      },
+                      child: ProductCard(
+                        image: p2,
+                        name: 'Shoes',
+                      )),
                 ),
                 StaggeredGridTile.count(
                   crossAxisCellCount: 2,
                   mainAxisCellCount: indexIncreatement(),
-                  child: ProductCard(image: j1,name: 'Shoes',),
+                  child: ProductCard(
+                    image: j1,
+                    name: 'Shoes',
+                  ),
                 ),
                 StaggeredGridTile.count(
                   crossAxisCellCount: 2,
                   mainAxisCellCount: indexIncreatement(),
-                  child: ProductCard(image: t4,name: 'Shoes',),
+                  child: ProductCard(
+                    image: t4,
+                    name: 'Shoes',
+                  ),
                 ),
                 StaggeredGridTile.count(
                   crossAxisCellCount: 2,
                   mainAxisCellCount: indexIncreatement(),
-                  child: ProductCard(image: p4,name: 'Shoes',),
+                  child: ProductCard(
+                    image: p4,
+                    name: 'Shoes',
+                  ),
                 ),
                 StaggeredGridTile.count(
                   crossAxisCellCount: 2,
                   mainAxisCellCount: indexIncreatement(),
-                  child: ProductCard(image: s1,name: 'Shoes',),
+                  child: ProductCard(
+                    image: s1,
+                    name: 'Shoes',
+                  ),
                 ),
                 StaggeredGridTile.count(
                   crossAxisCellCount: 2,
                   mainAxisCellCount: indexIncreatement(),
-                  child: ProductCard(image: t2,name: 'Shoes',),
+                  child: ProductCard(
+                    image: t2,
+                    name: 'Shoes',
+                  ),
                 ),
                 StaggeredGridTile.count(
                   crossAxisCellCount: 2,
                   mainAxisCellCount: indexIncreatement(),
-                  child: ProductCard(image: j1,name: 'Shoes',),
+                  child: ProductCard(
+                    image: j1,
+                    name: 'Shoes',
+                  ),
                 ),
                 StaggeredGridTile.count(
                   crossAxisCellCount: 2,
                   mainAxisCellCount: indexIncreatement(),
-                  child: ProductCard(image: j2,name: 'Shoes',),
+                  child: ProductCard(
+                    image: j2,
+                    name: 'Shoes',
+                  ),
                 ),
               ],
             ),
